@@ -34,9 +34,9 @@ footer{text-align:center;color:var(--muted);font-size:13px;padding:24px 16px}
 <main class="wrap">
 <div class="notice"><b>डेमो वेबसाइट:</b> अभी भुगतान और पूरा कंटेंट अनलॉक करने की सुविधा चालू नहीं है। किसी भी बटन पर वास्तविक भुगतान न करें।</div>
 <div class="grid">
-<article class="card"><span class="tag">8 अभ्यास सेट</span><h2>रसायन विज्ञान (Chemistry)</h2><p class="desc">कक्षा 12वीं • UP Board • 2026–27</p><div class="price">₹49</div><button class="preview" onclick="showPreview('Chemistry')">पहले 2 पेज का Preview</button><button class="buy" onclick="showBuy('Chemistry')">पूरा सेट – ₹49</button></article>
-<article class="card"><span class="tag">8 Practice Papers</span><h2>English</h2><p class="desc">Class 12 • UP Board • 2026–27</p><div class="price">₹49</div><button class="preview" onclick="showPreview('English')">पहले 2 पेज का Preview</button><button class="buy" onclick="showBuy('English')">पूरा सेट – ₹49</button></article>
-<article class="card"><span class="tag">8 अभ्यास प्रश्नपत्र</span><h2>सामान्य हिन्दी</h2><p class="desc">कक्षा 12वीं • UP Board • 2026–27</p><div class="price">₹49</div><button class="preview" onclick="showPreview('सामान्य हिन्दी')">पहले 2 पेज का Preview</button><button class="buy" onclick="showBuy('सामान्य हिन्दी')">पूरा सेट – ₹49</button></article>
+<article class="card"><span class="tag">8 अभ्यास सेट</span><h2>रसायन विज्ञान (Chemistry)</h2><p class="desc">कक्षा 12वीं • UP Board • 2026–27</p><div class="price">free PDF</div><button class="preview" onclick="showPreview('Chemistry')">पहले 2 पेज का Preview</button><button class="buy" onclick="showBuy('Chemistry')">पूरा सेट – ₹49</button></article>
+<article class="card"><span class="tag">8 Practice Papers</span><h2>English</h2><p class="desc">Class 12 • UP Board • 2026–27</p><div class="price">free PDF</div><button class="preview" onclick="showPreview('English')">पहले 2 पेज का Preview</button><button class="buy" onclick="showBuy('English')">पूरा सेट – ₹49</button></article>
+<article class="card"><span class="tag">8 अभ्यास प्रश्नपत्र</span><h2>सामान्य हिन्दी</h2><p class="desc">कक्षा 12वीं • UP Board • 2026–27</p><div class="price">free PDF</div><button class="preview" onclick="showPreview('सामान्य हिन्दी')">पहले 2 पेज का Preview</button><button class="buy" onclick="showBuy('सामान्य हिन्दी')">पूरा सेट – ₹49</button></article>
 </div>
 <p style="text-align:center;font-weight:700;margin-top:24px">तीनों विषय एक साथ: ₹147</p>
 </main>
@@ -54,7 +54,23 @@ document.getElementById('mtitle').textContent=s+' – पहले 2 पेज';
 document.getElementById('mbody').innerHTML='<iframe title="'+s+' Preview" src="'+files[s]+'#toolbar=0&navpanes=0" style="width:100%;height:62vh;border:0;border-radius:8px;background:white"></iframe><p class="small">यह केवल पहले दो पेज का नमूना है। पूरी सामग्री खरीद के बाद उपलब्ध होगी।</p>';
 document.getElementById('modal').classList.add('show');
 }
-function showBuy(s){document.getElementById('mtitle').textContent=s+' – ₹49';document.getElementById('mbody').innerHTML='<b>अभी खरीद सुविधा चालू नहीं है।</b><p>यह केवल वेबसाइट का डिज़ाइन डेमो है। असली भुगतान, भुगतान सत्यापन और सुरक्षित ऑनलाइन रीडर जोड़ने के बाद ही खरीद चालू होगी।</p>';document.getElementById('modal').classList.add('show')}
+function showBuy(subject){
+  const files = {
+    'Chemistry': 'previews/chemistry.pdf',
+    'English': 'previews/english.pdf',
+    'सामान्य हिन्दी': 'previews/samanya-hindi.pdf'
+  };
+
+  document.getElementById('mtitle').textContent =
+    subject + ' – FREE PDF';
+
+  document.getElementById('mbody').innerHTML =
+    '<iframe src="' + files[subject] +
+    '" style="width:100%;height:75vh;border:0;"></iframe>' +
+    '<p>10 दिनों के लिए पूरी PDF बिल्कुल मुफ्त है।</p>';
+
+  document.getElementById('modal').classList.add('show');
+}
 function closeModal(){document.getElementById('modal').classList.remove('show')}
 </script>
 </body></html>
