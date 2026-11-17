@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="hi">
 <head>
@@ -11,45 +12,55 @@
 --muted:#64708a;
 --brand:#2447b2;
 --soft:#eef2ff;
---line:#e5e9f2;
+--line:#e5e9f2
 }
 *{box-sizing:border-box}
 body{
 margin:0;
 font-family:Arial,"Noto Sans Devanagari",sans-serif;
 color:var(--ink);
-background:#f7f8fc;
+background:#f7f8fc
 }
 header{
 background:linear-gradient(120deg,#172b69,#315bd0);
 color:white;
-padding:28px 18px 38px;
+padding:28px 18px 38px
 }
 .wrap{max-width:960px;margin:auto}
-.brand{font-size:14px;letter-spacing:1.5px;font-weight:700}
+.brand{
+font-size:14px;
+letter-spacing:1.5px;
+font-weight:700
+}
 h1{font-size:clamp(28px,6vw,44px);margin:12px 0 8px}
-.sub{font-size:16px;line-height:1.6;color:#e5eaff}
+.sub{
+font-size:16px;
+line-height:1.6;
+max-width:650px;
+color:#e5eaff
+}
 main{padding:24px 16px 50px}
 .notice{
-background:#eaf8ef;
-border:1px solid #b9e5c7;
+background:#fff7e6;
+border:1px solid #f3d79a;
 padding:13px 15px;
 border-radius:12px;
-color:#175b2c;
+color:#694b10;
 font-size:14px;
-margin-bottom:20px;
+line-height:1.55;
+margin-bottom:20px
 }
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:16px;
+gap:16px
 }
 .card{
 background:white;
 border:1px solid var(--line);
 border-radius:18px;
 padding:20px;
-box-shadow:0 6px 22px #172b690b;
+box-shadow:0 6px 22px #172b690b
 }
 .tag{
 display:inline-block;
@@ -58,66 +69,90 @@ color:var(--brand);
 font-size:12px;
 font-weight:700;
 padding:6px 9px;
-border-radius:20px;
+border-radius:20px
 }
 h2{font-size:21px;margin:14px 0 6px}
-.desc{color:var(--muted);font-size:14px;line-height:1.5}
-.price{font-size:25px;font-weight:800;margin:16px 0;color:#16803b}
+.desc{
+color:var(--muted);
+font-size:14px;
+line-height:1.5;
+min-height:42px
+}
+.price{
+font-size:28px;
+font-weight:800;
+margin:16px 0
+}
 button{
 border:0;
 border-radius:10px;
 padding:12px 14px;
 font-weight:700;
 font-size:15px;
-cursor:pointer;
+cursor:pointer
 }
-.free{
-background:#16803b;
-color:white;
+.preview{
+background:#eef2ff;
+color:#2447b2;
 width:100%;
+margin-bottom:9px
+}
+.buy{
+background:#2447b2;
+color:white;
+width:100%
 }
 footer{
 text-align:center;
 color:var(--muted);
 font-size:13px;
-padding:24px 16px;
+padding:24px 16px
 }
 .modal{
 display:none;
 position:fixed;
 inset:0;
-background:#111a35c9;
+background:#111a35a8;
 align-items:center;
 justify-content:center;
 padding:12px;
-z-index:10;
+z-index:10
 }
 .modal.show{display:flex}
 .panel{
 background:white;
 border-radius:16px;
-padding:16px;
-max-width:900px;
+padding:18px;
+max-width:850px;
 width:100%;
-height:90vh;
-display:flex;
-flex-direction:column;
+max-height:90vh;
+overflow:auto
 }
-.panel h3{margin:8px 0 12px}
+.panel h3{margin-top:0}
 .close{
-align-self:flex-end;
+float:right;
 background:#eef0f5;
-color:#26324a;
+color:#26324a
 }
-.viewer{
+.pdf-frame{
 width:100%;
-flex:1;
-min-height:0;
+height:65vh;
 border:0;
 border-radius:8px;
-background:#f7f8fc;
+background:white
 }
-.small{font-size:12px;color:var(--muted)}
+.sample{
+background:#f7f8fc;
+border:1px solid var(--line);
+padding:14px;
+border-radius:10px;
+line-height:1.7
+}
+.small{
+font-size:12px;
+color:var(--muted);
+line-height:1.5
+}
 </style>
 </head>
 
@@ -129,7 +164,7 @@ background:#f7f8fc;
 <h1>Class 12 Practice Papers</h1>
 <div class="sub">
 UP Board परीक्षा 2027 की तैयारी के लिए अभ्यास प्रश्नपत्र।
-अपना विषय चुनें और पूरी PDF मुफ्त पढ़ें।
+विषय चुनें, नमूना देखें और पूरी सामग्री प्राप्त करें।
 </div>
 </div>
 </header>
@@ -137,9 +172,9 @@ UP Board परीक्षा 2027 की तैयारी के लिए �
 <main class="wrap">
 
 <div class="notice">
-<b>विशेष सूचना:</b>
-अगले 10 दिनों तक तीनों विषयों की पूरी PDF बिल्कुल मुफ्त उपलब्ध है।
-अभी कोई भुगतान नहीं करना है।
+<b>महत्वपूर्ण सूचना:</b>
+सभी विषयों के 8 अभ्यास सेट उपलब्ध हैं।
+पहले नमूना देखें और पूरी सामग्री के लिए आगे बढ़ें।
 </div>
 
 <div class="grid">
@@ -148,9 +183,12 @@ UP Board परीक्षा 2027 की तैयारी के लिए �
 <span class="tag">8 अभ्यास सेट</span>
 <h2>रसायन विज्ञान (Chemistry)</h2>
 <p class="desc">कक्षा 12वीं • UP Board • 2026–27</p>
-<div class="price">FREE PDF</div>
-<button class="free" onclick="showPDF('Chemistry')">
-FREE PDF प्राप्त करें
+<div class="price">₹49</div>
+<button class="preview" onclick="showPreview('Chemistry')">
+पहले 2 पेज का Preview
+</button>
+<button class="buy" onclick="showBuy('Chemistry')">
+पूरी PDF प्राप्त करें – ₹49
 </button>
 </article>
 
@@ -158,9 +196,12 @@ FREE PDF प्राप्त करें
 <span class="tag">8 Practice Papers</span>
 <h2>English</h2>
 <p class="desc">Class 12 • UP Board • 2026–27</p>
-<div class="price">FREE PDF</div>
-<button class="free" onclick="showPDF('English')">
-FREE PDF प्राप्त करें
+<div class="price">₹49</div>
+<button class="preview" onclick="showPreview('English')">
+पहले 2 पेज का Preview
+</button>
+<button class="buy" onclick="showBuy('English')">
+पूरी PDF प्राप्त करें – ₹49
 </button>
 </article>
 
@@ -168,16 +209,19 @@ FREE PDF प्राप्त करें
 <span class="tag">8 अभ्यास प्रश्नपत्र</span>
 <h2>सामान्य हिन्दी</h2>
 <p class="desc">कक्षा 12वीं • UP Board • 2026–27</p>
-<div class="price">FREE PDF</div>
-<button class="free" onclick="showPDF('सामान्य हिन्दी')">
-FREE PDF प्राप्त करें
+<div class="price">₹49</div>
+<button class="preview" onclick="showPreview('सामान्य हिन्दी')">
+पहले 2 पेज का Preview
+</button>
+<button class="buy" onclick="showBuy('सामान्य हिन्दी')">
+पूरी PDF प्राप्त करें – ₹49
 </button>
 </article>
 
 </div>
 
 <p style="text-align:center;font-weight:700;margin-top:24px">
-तीनों विषय अगले 10 दिनों तक मुफ्त
+तीनों विषय एक साथ: ₹147
 </p>
 
 </main>
@@ -190,63 +234,56 @@ FREE PDF प्राप्त करें
 onclick="if(event.target.id==='modal')closeModal()">
 
 <div class="panel">
-
-<button class="close" onclick="closeModal()">
-बंद करें ✕
-</button>
-
-<h3 id="mtitle">FREE PDF</h3>
-
-<iframe class="viewer" id="pdfViewer" title="PDF Reader">
-</iframe>
-
-<p class="small">
-PDF नहीं खुले तो नीचे लिंक से नई टैब में खोलें।
-<a id="openPdf" href="#" target="_blank" rel="noopener">
-PDF खोलें
-</a>
-</p>
-
+<button class="close" onclick="closeModal()">बंद करें ✕</button>
+<h3 id="mtitle"></h3>
+<div id="mbody" class="sample"></div>
 </div>
 </div>
 
 <script>
 
-const pdfFiles = {
-'Chemistry':'./previews/chemistry.pdf',
-'English':'./previews/english.pdf',
-'सामान्य हिन्दी':'./previews/samanya-hindi.pdf'
+const files = {
+'Chemistry':'previews/chemistry.pdf',
+'English':'previews/english.pdf',
+'सामान्य हिन्दी':'previews/samanya-hindi.pdf'
 };
 
-function showPDF(subject){
+function showPreview(subject){
 
-const file = pdfFiles[subject];
-
-if(!file){
-alert('PDF नहीं मिली।');
-return;
-}
+const file = files[subject];
 
 document.getElementById('mtitle').textContent =
-subject + ' – FREE PDF';
+subject + ' – Preview';
 
-document.getElementById('pdfViewer').src = file;
-
-document.getElementById('openPdf').href = file;
+document.getElementById('mbody').innerHTML =
+'<iframe class="pdf-frame" src="' + file +
+'#page=1&toolbar=0&navpanes=0"></iframe>' +
+'<p class="small">यह PDF का नमूना है।</p>' +
+'<p><a href="' + file +
+'" target="_blank">PDF नई टैब में खोलें</a></p>';
 
 document.getElementById('modal').classList.add('show');
+}
 
+function showBuy(subject){
+
+document.getElementById('mtitle').textContent =
+subject + ' – ₹49';
+
+document.getElementById('mbody').innerHTML =
+'<h3>पूरी सामग्री प्राप्त करें</h3>' +
+'<p>इस विषय के 8 अभ्यास सेट की कीमत ₹49 है।</p>' +
+'<p>भुगतान सुविधा अभी सेटअप नहीं हुई है। जल्द उपलब्ध होगी।</p>';
+
+document.getElementById('modal').classList.add('show');
 }
 
 function closeModal(){
-
 document.getElementById('modal').classList.remove('show');
-
-document.getElementById('pdfViewer').src = '';
-
 }
 
 </script>
 
 </body>
 </html>
+
