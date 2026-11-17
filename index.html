@@ -1,288 +1,111 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="hi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NighasanSchools | Class 12 Practice Papers</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NighasanSchools - Class 12 Practice Sets</title>
 <style>
-:root{
---ink:#18233b;
---muted:#64708a;
---brand:#2447b2;
---soft:#eef2ff;
---line:#e5e9f2
-}
 *{box-sizing:border-box}
 body{
-margin:0;
-font-family:Arial,"Noto Sans Devanagari",sans-serif;
-color:var(--ink);
-background:#f7f8fc
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f1f5ff;
+  color:#172554;
 }
 header{
-background:linear-gradient(120deg,#172b69,#315bd0);
-color:white;
-padding:28px 18px 38px
+  background:#123b83;
+  color:white;
+  text-align:center;
+  padding:28px 12px;
 }
-.wrap{max-width:960px;margin:auto}
-.brand{
-font-size:14px;
-letter-spacing:1.5px;
-font-weight:700
-}
-h1{font-size:clamp(28px,6vw,44px);margin:12px 0 8px}
-.sub{
-font-size:16px;
-line-height:1.6;
-max-width:650px;
-color:#e5eaff
-}
-main{padding:24px 16px 50px}
-.notice{
-background:#fff7e6;
-border:1px solid #f3d79a;
-padding:13px 15px;
-border-radius:12px;
-color:#694b10;
-font-size:14px;
-line-height:1.55;
-margin-bottom:20px
-}
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:16px
+header h1{margin:0;font-size:30px}
+header p{margin:10px 0 0}
+.container{
+  max-width:850px;
+  margin:25px auto;
+  padding:12px;
 }
 .card{
-background:white;
-border:1px solid var(--line);
-border-radius:18px;
-padding:20px;
-box-shadow:0 6px 22px #172b690b
+  background:white;
+  padding:22px;
+  margin:18px 0;
+  border-radius:14px;
+  box-shadow:0 3px 12px #00000012;
+  text-align:center;
 }
-.tag{
-display:inline-block;
-background:var(--soft);
-color:var(--brand);
-font-size:12px;
-font-weight:700;
-padding:6px 9px;
-border-radius:20px
+.card h2{margin-top:0;color:#123b83}
+.btn{
+  display:inline-block;
+  padding:12px 20px;
+  margin:7px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  border:0;
+  cursor:pointer;
+  font-size:15px;
 }
-h2{font-size:21px;margin:14px 0 6px}
-.desc{
-color:var(--muted);
-font-size:14px;
-line-height:1.5;
-min-height:42px
-}
-.price{
-font-size:28px;
-font-weight:800;
-margin:16px 0
-}
-button{
-border:0;
-border-radius:10px;
-padding:12px 14px;
-font-weight:700;
-font-size:15px;
-cursor:pointer
-}
-.preview{
-background:#eef2ff;
-color:#2447b2;
-width:100%;
-margin-bottom:9px
-}
-.buy{
-background:#2447b2;
-color:white;
-width:100%
-}
+.demo{background:#087bdb;color:white}
+.buy{background:#138044;color:white}
 footer{
-text-align:center;
-color:var(--muted);
-font-size:13px;
-padding:24px 16px
-}
-.modal{
-display:none;
-position:fixed;
-inset:0;
-background:#111a35a8;
-align-items:center;
-justify-content:center;
-padding:12px;
-z-index:10
-}
-.modal.show{display:flex}
-.panel{
-background:white;
-border-radius:16px;
-padding:18px;
-max-width:850px;
-width:100%;
-max-height:90vh;
-overflow:auto
-}
-.panel h3{margin-top:0}
-.close{
-float:right;
-background:#eef0f5;
-color:#26324a
-}
-.pdf-frame{
-width:100%;
-height:65vh;
-border:0;
-border-radius:8px;
-background:white
-}
-.sample{
-background:#f7f8fc;
-border:1px solid var(--line);
-padding:14px;
-border-radius:10px;
-line-height:1.7
-}
-.small{
-font-size:12px;
-color:var(--muted);
-line-height:1.5
+  text-align:center;
+  padding:20px;
+  background:#123b83;
+  color:white;
 }
 </style>
 </head>
-
 <body>
 
 <header>
-<div class="wrap">
-<div class="brand">NIGHASANSCHOOLS</div>
-<h1>Class 12 Practice Papers</h1>
-<div class="sub">
-UP Board परीक्षा 2027 की तैयारी के लिए अभ्यास प्रश्नपत्र।
-विषय चुनें, नमूना देखें और पूरी सामग्री प्राप्त करें।
-</div>
-</div>
+  <h1>NighasanSchools</h1>
+  <p>UP Board Class 12th Practice Sets 2027</p>
+  <p>बेहतर तैयारी के लिए विषयवार अभ्यास सेट</p>
 </header>
 
-<main class="wrap">
+<div class="container">
 
-<div class="notice">
-<b>महत्वपूर्ण सूचना:</b>
-सभी विषयों के 8 अभ्यास सेट उपलब्ध हैं।
-पहले नमूना देखें और पूरी सामग्री के लिए आगे बढ़ें।
-</div>
+  <div class="card">
+    <h2>रसायन विज्ञान (Chemistry)</h2>
+    <p>8 Practice Sets</p>
+    <a class="btn demo"
+       href="previews/chemistry-preview.pdf"
+       target="_blank">Demo देखें</a>
+    <button class="btn buy" onclick="buyMessage()">₹49 में खरीदें</button>
+  </div>
 
-<div class="grid">
+  <div class="card">
+    <h2>English</h2>
+    <p>8 Practice Sets</p>
+    <a class="btn demo"
+       href="previews/english-preview.pdf"
+       target="_blank">Demo देखें</a>
+    <button class="btn buy" onclick="buyMessage()">₹49 में खरीदें</button>
+  </div>
 
-<article class="card">
-<span class="tag">8 अभ्यास सेट</span>
-<h2>रसायन विज्ञान (Chemistry)</h2>
-<p class="desc">कक्षा 12वीं • UP Board • 2026–27</p>
-<div class="price">₹49</div>
-<button class="preview" onclick="showPreview('Chemistry')">
-पहले 2 पेज का Preview
-</button>
-<button class="buy" onclick="showBuy('Chemistry')">
-पूरी PDF प्राप्त करें – ₹49
-</button>
-</article>
-
-<article class="card">
-<span class="tag">8 Practice Papers</span>
-<h2>English</h2>
-<p class="desc">Class 12 • UP Board • 2026–27</p>
-<div class="price">₹49</div>
-<button class="preview" onclick="showPreview('English')">
-पहले 2 पेज का Preview
-</button>
-<button class="buy" onclick="showBuy('English')">
-पूरी PDF प्राप्त करें – ₹49
-</button>
-</article>
-
-<article class="card">
-<span class="tag">8 अभ्यास प्रश्नपत्र</span>
-<h2>सामान्य हिन्दी</h2>
-<p class="desc">कक्षा 12वीं • UP Board • 2026–27</p>
-<div class="price">₹49</div>
-<button class="preview" onclick="showPreview('सामान्य हिन्दी')">
-पहले 2 पेज का Preview
-</button>
-<button class="buy" onclick="showBuy('सामान्य हिन्दी')">
-पूरी PDF प्राप्त करें – ₹49
-</button>
-</article>
+  <div class="card">
+    <h2>सामान्य हिन्दी</h2>
+    <p>8 Practice Sets</p>
+    <a class="btn demo"
+       href="previews/samanya-hindi-preview.pdf"
+       target="_blank">Demo देखें</a>
+    <button class="btn buy" onclick="buyMessage()">₹49 में खरीदें</button>
+  </div>
 
 </div>
-
-<p style="text-align:center;font-weight:700;margin-top:24px">
-तीनों विषय एक साथ: ₹147
-</p>
-
-</main>
 
 <footer>
-© NighasanSchools • शैक्षिक अभ्यास सामग्री
+  © 2026 NighasanSchools
 </footer>
 
-<div class="modal" id="modal"
-onclick="if(event.target.id==='modal')closeModal()">
-
-<div class="panel">
-<button class="close" onclick="closeModal()">बंद करें ✕</button>
-<h3 id="mtitle"></h3>
-<div id="mbody" class="sample"></div>
-</div>
-</div>
-
 <script>
-
-const files = {
-previews/chemistry-preview.pdf
-previews/english-preview.pdf
-previews/samanya-hindi-preview.pdf
-
-function showPreview(subject){
-
-const file = files[subject];
-
-document.getElementById('mtitle').textContent =
-subject + ' – Preview';
-
-document.getElementById('mbody').innerHTML =
-'<iframe class="pdf-frame" src="' + file +
-'#page=1&toolbar=0&navpanes=0"></iframe>' +
-'<p class="small">यह PDF का नमूना है।</p>' +
-'<p><a href="' + file +
-'" target="_blank">PDF नई टैब में खोलें</a></p>';
-
-document.getElementById('modal').classList.add('show');
+function buyMessage(){
+  alert("ऑनलाइन भुगतान की सुविधा अभी शुरू नहीं हुई है।");
 }
-
-function showBuy(subject){
-
-document.getElementById('mtitle').textContent =
-subject + ' – ₹49';
-
-document.getElementById('mbody').innerHTML =
-'<h3>पूरी सामग्री प्राप्त करें</h3>' +
-'<p>इस विषय के 8 अभ्यास सेट की कीमत ₹49 है।</p>' +
-'<p>भुगतान सुविधा अभी सेटअप नहीं हुई है। जल्द उपलब्ध होगी।</p>';
-
-document.getElementById('modal').classList.add('show');
-}
-
-function closeModal(){
-document.getElementById('modal').classList.remove('show');
-}
-
 </script>
 
 </body>
 </html>
+
 
